@@ -3,11 +3,12 @@ body {
     background-color: #f0f0f0;
     text-align: center;
     padding: 20px;
+	background-color: #0c1116;
+	color: #f0f6fc;
 }
 
 h1 {
     font-size: 40px;
-    color: #333;
 }
 
 #mi-parrafo {
@@ -15,8 +16,13 @@ h1 {
     color: #C1C1C1;
 }
 
+#img-git {
+	width: 100%;
+}
+
 button {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+	color #f0f6fc;
 }
