@@ -6,7 +6,7 @@ body {
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 50px;
 }
 
 .button-container {
@@ -17,19 +17,21 @@ h1 {
 }
 
 .button {
-    flex: 1 1 600px;
+    flex: 1 1 240px;
     background-color: #212830;
     border: none;
+    height: 50px;
+    line-height: 50px;
     color: #f1f6fd;
     padding: 12px 24px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 29px;
     border-radius: 8px;
     transition: background-color 0.3s ease;
     cursor: pointer;
-    border: 2px solid #3d444d;
+    border: 3px solid #3d444d;
 }
 
 .button:hover {
