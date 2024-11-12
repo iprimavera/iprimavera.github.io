@@ -1,6 +1,33 @@
-input[type="button"].button-primary {
-  color: #FFF;
-  background-color: #33C3F0;
-  border-color: #33C3F0;
-  }
+body {
+    background-color: #0d1117;
+    color: #f1f6fd;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.button {
+    flex: 1 1 200px;
+    background-color: #238636;
+    border: none;
+    color: #f1f6fd;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #29903b;
+}
 
