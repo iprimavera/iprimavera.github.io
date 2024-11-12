@@ -5,6 +5,10 @@ body {
     text-align: center;
 }
 
+h1 {
+    font-size: 60px;
+}
+
 .button-container {
     display: flex;
     flex-wrap: wrap;
@@ -13,8 +17,8 @@ body {
 }
 
 .button {
-    flex: 1 1 200px;
-    background-color: #238636;
+    flex: 1 1 600px;
+    background-color: #212830;
     border: none;
     color: #f1f6fd;
     padding: 12px 24px;
@@ -25,9 +29,11 @@ body {
     border-radius: 8px;
     transition: background-color 0.3s ease;
     cursor: pointer;
+    border: 2px solid #3d444d;
 }
 
 .button:hover {
-    background-color: #29903b;
+    background-color: #3d444d;
+    border-color: #3d444d;
 }
 
