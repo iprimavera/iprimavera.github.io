@@ -100,3 +100,16 @@ svg:hover path {
     line-height: 0.6;
     text-align: left;
 }
+
+@media (max-width: 768px) {
+    .foot-info {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+    }
+
+    .footer-icons {
+        margin-top: 10px;
+        justify-content: center;
+    }
+}
