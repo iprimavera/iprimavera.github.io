@@ -33,7 +33,6 @@ h1 {
 .button {
     flex: 1 1 240px;
     background-color: #212830;
-    border: none;
     height: 50px;
     line-height: 50px;
     color: var(--text-color);
