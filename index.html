@@ -5,19 +5,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="style.css" />
-        <script>
-            // Función para cargar el footer desde el archivo footer.html
-            async function cargarFooter() {
-                const response = await fetch('footer.html');
-                const cosa = await response.text();
-                document.getElementById('footer').innerHTML = cosa;
-            }
-
-            // Cargar el footer cuando la página esté lista
-            window.onload = () => {
-                cargarFooter();
-            }
-        </script>
+        <script src="script.js" defer></script>
 	</head>
 	<body>
 		<div class="content">
