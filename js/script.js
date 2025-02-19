@@ -1,6 +1,6 @@
 // Función para cargar el footer desde el archivo footer.html
 async function cargarFooter() {
-    const response = await fetch('footer.html');
+    const response = await fetch('../includes/footer.html');
     document.getElementById('footer').innerHTML = await response.text();
 }
 

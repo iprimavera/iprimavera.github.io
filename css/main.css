@@ -1,0 +1,20 @@
+:root {
+    --text-color: #f1f6fd;
+    --background-color: #1e2129;
+    --background-color-footer: #111317;
+    --text-color-oscuro-footer: #ffffff63;
+    --text-color-claro-footer: #ffffff9a;
+    --text-color-hover-footer: #f1f6fd;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    letter-spacing: -0.2px;
+}
