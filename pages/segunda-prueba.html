@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Fuegos Artificiales en Canvas</title>
+  <style>
+    body, html { margin: 0; padding: 0; overflow: hidden; background: #000; }
+    canvas { display: block; }
+  </style>
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+  <script>
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+    let W = canvas.width = window.innerWidth;
+    let H = canvas.height = window.innerHeight;
+
+    window.addEventListener('resize', () => {
+      W = canvas.width = window.innerWidth;
+      H = canvas.height = window.innerHeight;
+    });
+
+    class Particle {
+      constructor(x, y, color) {
+        this.x = x;
+        this.y = y;
+        this.vel = {
+          x: (Math.random() - 0.5) * 4,
+          y: (Math.random() - 1.5) * 4
+        };
+        this.alpha = 1;
+        this.color = color;
+      }
+      update() {
+        this.x += this.vel.x;
+        this.y += this.vel.y;
+        this.vel.y += 0.02;       // gravedad ligera
+        this.alpha -= 0.01;      // desvanecimiento
+      }
+      draw() {
+        ctx.save();
+        ctx.globalAlpha = this.alpha;
+        ctx.fillStyle = this.color;
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, 2, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.restore();
+      }
+    }
+
+    const particles = [];
+
+    function explode(x, y) {
+      const hue = Math.floor(Math.random() * 360);
+      const color = `hsl(${hue}, 100%, 50%)`;
+      const count = 80 + Math.random() * 40;
+      for (let i = 0; i < count; i++) {
+        particles.push(new Particle(x, y, color));
+      }
+    }
+
+    canvas.addEventListener('click', (e) => {
+      explode(e.clientX, e.clientY);
+    });
+
+    function animate() {
+      requestAnimationFrame(animate);
+      // efecto de estela (semi-transparente)
+      ctx.fillStyle = 'rgba(0, 0, 0, 0.2)';
+      ctx.fillRect(0, 0, W, H);
+
+      for (let i = particles.length - 1; i >= 0; i--) {
+        const p = particles[i];
+        p.update();
+        if (p.alpha <= 0) {
+          particles.splice(i, 1);
+        } else {
+          p.draw();
+        }
+      }
+    }
+
+    animate();
+  </script>
+</body>
+</html>
