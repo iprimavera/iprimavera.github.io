@@ -35,8 +35,8 @@
       update() {
         this.x += this.vel.x;
         this.y += this.vel.y;
-        this.vel.y += 0.02;       // gravedad ligera
-        this.alpha -= 0.01;      // desvanecimiento
+        this.vel.y += 0.02;
+        this.alpha -= 0.01;
       }
       draw() {
         ctx.save();
@@ -66,7 +66,6 @@
 
     function animate() {
       requestAnimationFrame(animate);
-      // efecto de estela (semi-transparente)
       ctx.fillStyle = 'rgba(0, 0, 0, 0.2)';
       ctx.fillRect(0, 0, W, H);
 
