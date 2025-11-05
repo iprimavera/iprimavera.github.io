@@ -1,26 +1,34 @@
 <!DOCTYPE HTML>
+<!--
+Debes hacer uso de fuente(s) distinta(s) a las estándar presentes en las diferentes plataformas de Sistema Operativo.
+ Puedes usar las de Google fonts o, mejor, descargarlas y hacer uso de las fuentes desde tu propio alojamiento.
+ Esto lo conseguimos con el @import o el @font-face en el CSS.
+Haz uso de las etiquetas de la web semántica (nav, article, main, aside, footer, ... )
+La página debe ser adaptativa o responsiva.
+El CSS debería hacer uso de, al menos,  pseudo-clases (y/o pseudo-elementos).
+El posicionamiento de alguno de los elementos en la página por CSS es obligatorio.
+-->
 <html lang="es-ES">
 	<head>
 		<title>Inicio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="css/main.css"/>
-		<link rel="stylesheet" href="css/index.css"/>
         <script src="js/script.js" defer></script>
 	</head>
 	<body>
 		<div class="content">
-			<h1>Páginas de prueba</h1>
-			<p><u><b>Estas páginas están hechas para aprender los fundamentos de HTML, CSS y JavaScript.</b></u></p>
-			<div class="button-container">
-				<a href="pages/primera-prueba.html" class="button" style="color: #faff16">1</a>
-				<a href="pages/segunda-prueba.html" class="button" style="color: orangered">2</a>
-				<a href="#" class="button" style="color: orangered">3</a>
-				<a href="#" class="button" style="color: orangered">4</a>
+			<video autoplay muted loop playsinline id="myVideo">
+				<source src="assets/fondo.mp4" type="video/mp4">
+			</video>
+			<div class="fondo"></div>
+			<h1 class="index">Iván - Dev</h1>
+			<div class="index_buttons">
+				<a href="pages/proyectos.html" class="button index">Proyectos</a>
+				<a href="pages/galeria.html" class="button index">Galería</a>
+				<a href="pages/about.html" class="button index">Sobre mí</a>
+				<a href="pages/contacto.html" class="button index">Contacto</a>
 			</div>
-
-			<img src="images/gitworking.png" alt="gitworking" style="width: 100%;">
-
 		</div>
         <div id="footer"></div>
 	</body>

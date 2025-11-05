@@ -7,6 +7,13 @@
     --text-color-hover-footer: #f1f6fd;
 }
 
+@font-face {
+    font-family: 'digital';
+    src: url('../assets/DIGITALCALIPER.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     background-color: var(--background-color);
     color: var(--text-color);
@@ -17,4 +24,61 @@ body {
     min-height: 100vh;
     margin: 0;
     letter-spacing: -0.2px;
+}
+
+.fondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+#myVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -2;
+}
+
+h1 {
+    font-size: 7vh;
+}
+.index {
+    font-family: 'digital', sans-serif;
+    letter-spacing: 2px;
+}
+.index_buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+.index_buttons .button:first-child {
+    flex: 1 1 100%;
+}
+.index_buttons .button {
+    flex: 1 1 540px;
+    background-color: rgba(33, 40, 48, 0.8);
+    height: 50px;
+    line-height: 50px;
+    color: var(--text-color);
+    padding: 7% 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 5vw;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    border: 3px solid #3d444d;
+}
+.index_buttons .button:hover {
+    background-color: #3d444d;
+    border-color: #3d444d;
 }
