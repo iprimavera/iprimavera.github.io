@@ -121,3 +121,8 @@ h1 {
     font-size: 14px;
 }
 
+@media (max-width: 650px) {
+    .presentacion .index {
+        font-size: 70px;
+    }
+}
