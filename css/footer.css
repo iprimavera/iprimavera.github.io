@@ -23,8 +23,8 @@ footer a:hover {
 }
 
 footer svg {
-    width: 1.2rem;
-    height: 1.2rem;
+    width: 1.5rem;
+    height: 1.5rem;
 }
 footer svg path {
     fill: var(--text-color-claro-footer);
