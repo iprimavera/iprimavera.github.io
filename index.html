@@ -4,26 +4,31 @@ Haz uso de las etiquetas de la web semántica (nav, article, main, aside, footer
 -->
 <html lang="es-ES">
 	<head>
-		<title>Inicio</title>
+		<title>Inicio - Iprimavera</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" type="image/png" href="/assets/favicon/favicon-96x96.png" sizes="96x96" />
+		<link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" />
+		<link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+		<link rel="manifest" href="/assets/favicon/site.webmanifest" />
 		<link rel="stylesheet" href="css/main.css"/>
         <script src="js/script.js" defer></script>
 	</head>
 	<body>
-		<div class="content">
+		<main class="content">
 			<video autoplay muted loop id="myVideo">
 				<source src="assets/fondo.mp4" type="video/mp4">
 			</video>
 			<div class="fondo"></div>
 			<h1 class="index">Iván - Dev</h1>
-			<div class="index_buttons">
+			<nav class="index_buttons">
 				<a href="pages/proyectos.html" class="button index">Proyectos</a>
 				<a href="pages/galeria.html" class="button index">Galería</a>
 				<a href="pages/about.html" class="button index">Sobre mí</a>
-				<a href="pages/roadmap.html" class="button index">Roadmap</a>
-			</div>
-		</div>
-        <div id="footer"></div>
+				<a href="pages/skills.html" class="button index">Skills</a>
+			</nav>
+		</main>
+        <div id="footer"></div> <!-- si le pongo footer sale raro asi que es div-->
 	</body>
 </html>
