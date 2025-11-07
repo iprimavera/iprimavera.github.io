@@ -7,6 +7,13 @@
     --text-color-hover-footer: #f1f6fd;
 }
 
+@font-face {
+    font-family: 'digital';
+    src: url('../assets/DIGITALCALIPER.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     background-color: var(--background-color);
     color: var(--text-color);
@@ -17,4 +24,105 @@ body {
     min-height: 100vh;
     margin: 0;
     letter-spacing: -0.2px;
+}
+
+.fondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+#myVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -2;
+}
+
+h1 {
+    font-size: 7vh;
+}
+
+.button {
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    border: 3px solid #3d444d;
+    height: 50px;
+    line-height: 50px;
+    text-decoration: none;
+    background-color: rgba(33, 40, 48, 0.8);
+    color: var(--text-color);
+    border-radius: 8px;
+    padding: 15px 24px;
+}
+.button:hover {
+    background-color: #3d444d;
+    border-color: #3d444d;
+}
+
+.index {
+    font-family: 'digital', sans-serif;
+    letter-spacing: 2px;
+}
+.index_buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+.index_buttons .button:first-child {
+    flex: 1 1 100%;
+}
+.index_buttons .button {
+    flex: 1 1 540px;
+    padding: 7% 24px;
+    display: inline-block;
+    font-size: 5vw;
+}
+
+.lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 24px;
+    padding: 20px;
+}
+.presentacion {
+    margin: 50px 80px;
+}
+.presentacion p {
+    font-size: 20px;
+}
+.proyecto {
+    background-color: #111317;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s;
+    flex: 1 1 460px;
+}
+.proyecto:hover {
+    transform: scale(1.03);
+}
+.proyecto img {
+    width: 100%;
+    height: auto;
+}
+.proyecto h3 {
+    margin: 10px 0 4px;
+}
+.proyecto p {
+    margin: 20px 80px;
+    font-size: 14px;
+}
+
+@media (max-width: 650px) {
+    .presentacion .index {
+        font-size: 70px;
+    }
 }
