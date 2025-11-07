@@ -136,8 +136,11 @@ h1 {
         font-size: 4vh;
     }
     .presentacion p {
-        font-size: 15px;
-        margin: 10px 10px;
+        font-size: 16px;
+        margin: 10px -10px;
+    }
+    .proyecto p {
+        margin: 20px 20px;
     }
     .about p {
         font-size: 18px;
