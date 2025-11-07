@@ -121,6 +121,13 @@ h1 {
     font-size: 14px;
 }
 
+.about p {
+    font-size: 24px;
+}
+.descripcion {
+    margin: auto 20%;
+}
+
 @media (max-width: 650px) {
     .lista {
         grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
@@ -131,5 +138,11 @@ h1 {
     .presentacion p {
         font-size: 15px;
         margin: 10px 10px;
+    }
+    .about p {
+        font-size: 18px;
+    }
+    .descripcion {
+        margin: auto 10%;
     }
 }
