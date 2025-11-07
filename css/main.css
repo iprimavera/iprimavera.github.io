@@ -122,7 +122,14 @@ h1 {
 }
 
 @media (max-width: 650px) {
+    .lista {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
     .presentacion .index {
-        font-size: 70px;
+        font-size: 4vh;
+    }
+    .presentacion p {
+        font-size: 15px;
+        margin: 10px 10px;
     }
 }
