@@ -149,3 +149,39 @@ h1 {
         margin: auto 10%;
     }
 }
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 650px;
+    margin: 50px auto;
+    padding: 24px;
+    text-align: left;
+    background-color: var(--background-color-footer);
+    border-radius: 10px;
+}
+.contact-form h2 {
+    margin: 0 0 8px;
+    text-align: center;
+}
+.contact-form input, .contact-form textarea {
+    padding: 12px;
+    font: inherit;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    border: 3px solid #3d444d;
+    border-radius: 8px;
+}
+.contact-form input:focus, .contact-form textarea:focus {
+    outline: none;
+    border-color: var(--text-color-claro-footer);
+}
+.contact-form textarea {
+    resize: vertical;
+}
+.contact-form .button {
+    align-self: center;
+    margin-top: 8px;
+    font: inherit;
+}
